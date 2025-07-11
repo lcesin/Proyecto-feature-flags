@@ -1,5 +1,5 @@
 {
-  "name": "proyecto-feature-flags",
+  "name": "@lcesin-pitaa05/proyecto-feature-flags",
   "version": "1.0.0",
   "description": "Proyecto de Feature Flags para Tópicos Especiales de Programación",
   "homepage": "https://github.com/lcesin/Proyecto-feature-flags#readme",
@@ -11,20 +11,22 @@
     "url": "git+https://github.com/lcesin/Proyecto-feature-flags.git"
   },
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
+  "author": "Luis Cesin, Adrian Pita",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "start": "node dist/index.js",
     "test": "jest",
     "build": "tsc",
-    "start": "node src/index.js"
-  },
-  "dependencies": {
-    "@types/node": "^24.0.12",
-    "typescript": "^5.8.3"
+    "prepare": "npm run build"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0"
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
   }
 }

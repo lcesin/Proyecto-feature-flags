@@ -1,0 +1,7 @@
+# Source and test files
+src/
+jest.config.js
+
+# TS and build artifacts
+tsconfig.json
+node_modules/
